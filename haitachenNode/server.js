@@ -1,12 +1,27 @@
-const http = require('http');
 const fs = require('fs')
-const content = 'Some content!'
+const express = require('express')
+const app = express()
+const port = 3000
 
-const server = http.createServer((req, res) => {
-    fs.appendFileSync('../song', 'data to append');
-    res.statusCode = 200
-    res.setHeader('Content-Type', 'text/html')
-    res.end('<h1>Hello, World!</h1>')
+
+app.use(
+  express.urlencoded({
+    extended: true
+  })
+)
+
+app.use(express.json())
+
+app.post('/', (req, res) => {
+  console.log(req.body)
+  res.redirect('http://haitachen.com')
+  fs.appendFileSync('../song', "\n" + req.body.newLine);
 })
 
-server.listen(3000);
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
+
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+})
