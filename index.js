@@ -18,17 +18,15 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  var miliseconds = Math.floor((distance % 1000) / 1);
 
   const fixeddays = ('' + days).padStart(2, '0')
   const fixedhours = ('' + hours).padStart(2, '0')
   const fixedminutes = ('' + minutes).padStart(2, '0')
   const fixedseconds = ('' + seconds).padStart(2, '0')
-  const fixedmiliseconds = ('' + miliseconds).padStart(3, '0')
 
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = fixeddays + ":" + fixedhours + ":"
-  + fixedminutes + ":" + fixedseconds + ":" + fixedmiliseconds;
+  + fixedminutes + ":" + fixedseconds;
 }, 1);
 
 function randomTiming() {
@@ -38,7 +36,7 @@ function randomTiming() {
 
 function createConfettiDiv(id, top, right, timing) {
 
-  var textArray = ['🎉','🎊','✨','🍰','❤']
+  var textArray = ['🎉','🎊','✨','🍰','❤',]
   var item = textArray[Math.floor(Math.random()*textArray.length)]
 
   var div = document.createElement('div')
@@ -98,4 +96,4 @@ function confetti(e){
   }
 }
 
-document.getElementById('page').addEventListener('click',confetti)
+document.getElementById('card').addEventListener('click',confetti)
