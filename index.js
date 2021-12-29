@@ -97,3 +97,12 @@ function confetti(e){
 }
 
 document.getElementById('card').addEventListener('click',confetti)
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    myFunction(this);
+  }
+  xhttp.open("GET", "song");
+  xhttp.send();
+}
+document.getElementById('song').innerHTML 

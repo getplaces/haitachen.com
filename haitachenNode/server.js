@@ -13,9 +13,9 @@ app.use(
 app.use(express.json())
 
 app.post('/', (req, res) => {
-  console.log(req.body)
+  fs.appendFileSync('/var/www/haitachen.com/song.html', "\n" + "<div>" + req.body.newLine + "</div>");
+  console.log(req.body.newLine)
   res.redirect('http://haitachen.com')
-  fs.appendFileSync('../song', "\n" + req.body.newLine);
 })
 
 app.get('/', (req, res) => {
