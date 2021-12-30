@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: url(background.jpeg);
+  background-image: url(./images/background.jpeg);
   background-position: center;
   background-position-y: top;
   background-repeat: no-repeat;
@@ -80,6 +80,10 @@ body {
     user-select: none;
 }
 
+#extrasbox {
+  display: flex;
+}
+
 
 /* Song box */
 #song {
@@ -90,8 +94,10 @@ body {
   margin-top: 0px;
 }
 
-#songbox {
+.songbox {
   margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: solid;
   border-width: 10px;
   border-color: #a4c6c8;
@@ -113,7 +119,7 @@ body {
   text-align: right;
 }
 
-#new_line {
+#new_song_line {
   font-size: 30px;
   border: none;
   border-bottom: 2px solid;
@@ -123,6 +129,15 @@ body {
   margin-top: 10px;
 }
 
+#new_blessing_line {
+  font-size: 30px;
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+  width: 80%;
+  margin: 10%;
+  margin-top: 10px;
+}
 
 /* Page title */
 #title {
@@ -135,11 +150,20 @@ body {
 
 
 /* Cards */
+
+#cards {
+  display: flex;
+}
+
 .card {
+  margin-left: 10px;
+  margin-right: 10px;
   position: relative;
-  width: 700px;
+  width: 400px;
   height: 400px;
   overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card::after {
@@ -167,36 +191,78 @@ body {
   width: 100%;
   height: 100%;
   
-  transform: translateX( 700px );
-  background-image: url(carry_image.jpeg);
+  transform: translateY( 400px );
+  background-image: url(./images/20.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   
-  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation: opaqTransition 66s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
 .card_part.card_part-two {
-  z-index: 6;
-  background-image: url(carry_image.jpeg);
-  animation-delay: 7s;
+  z-index: 20;
+  background-image: url(./images/19.jpeg);
+  animation-delay: 6s;
 }
 
 .card_part.card_part-three {
-  z-index: 5;
-  background-image: url(carry_image.jpeg);
-  animation-delay: 14s;
+  z-index: 19;
+  background-image: url(./images/18.jpeg);
+  animation-delay: 12s;
 }
 
 .card_part.card_part-four {
+  z-index: 18;
+  background-image: url(./images/17.jpeg);
+  animation-delay: 18s;
+}
+
+.card_part.card_part-five {
+  z-index: 17;
+  background-image: url(./images/16.jpeg);
+  animation-delay: 24s;
+}
+
+.card_part.card_part-six {
+  z-index: 16;
+  background-image: url(./images/15.jpeg);
+  animation-delay: 30s;
+}
+
+.card_part.card_part-seven {
   z-index: 4;
-  background-image: url(carry_image.jpeg);
-  animation-delay: 21s;
+  background-image: url(./images/14.jpeg);
+  animation-delay: 36s;
+}
+
+.card_part.card_part-eight {
+  z-index: 4;
+  background-image: url(./images/13.jpeg);
+  animation-delay: 42s;
+}
+
+.card_part.card_part-nine {
+  z-index: 4;
+  background-image: url(./images/12.jpeg);
+  animation-delay: 48s;
+}
+
+.card_part.card_part-ten {
+  z-index: 4;
+  background-image: url(./images/11.jpeg);
+  animation-delay: 54s;
+}
+
+.card_part.card_part-eleven {
+  z-index: 4;
+  background-image: url(./images/10.jpeg);
+  animation-delay: 60s;
 }
 
 @keyframes opaqTransition {
-  3% { transform: translateX( 0 ); }
-  25% { transform: translateX( 0 ); }
-  28% { transform: translateX( -700px ); }
-  100% { transform: translateX( -700px ); }
+  1% { transform: translateY( 0px ); }
+  9.09% { transform: translateY( 0px ); }
+  10.09% { transform: translateY( -400px ); }
+  100% { transform: translateY( -400px ); }
 }

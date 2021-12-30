@@ -5,28 +5,61 @@
 
 
 <div id="page">
+
     <div id="text-container">
         <div id="title">!?האיתחן</div>
         <div id="title">:נשאר רק עוד</div>
         <div id="timer" class="center"></div>
-        <div id="card" class="card">
-            <div class="card_part card_part-one"></div>
-            <div class="card_part card_part-two"></div>
-            <div class="card_part card_part-three"></div>
-            <div class="card_part card_part-four"></div>
+        <div id="cards">
+            <div id="chenCard" class="card">
+                <div class="card_part card_part-one"></div>
+                <div class="card_part card_part-two"></div>
+                <div class="card_part card_part-three"></div>
+                <div class="card_part card_part-four"></div>
+                <div class="card_part card_part-five"></div>
+                <div class="card_part card_part-six"></div>
+                <div class="card_part card_part-seven"></div>
+                <div class="card_part card_part-eight"></div>
+                <div class="card_part card_part-nine"></div>
+                <div class="card_part card_part-ten"></div>
+                <div class="card_part card_part-eleven"></div>
+            </div>
+            <div id="itaCard" class="card">
+                <div class="card_part card_part-one"></div>
+                <div class="card_part card_part-two"></div>
+                <div class="card_part card_part-three"></div>
+                <div class="card_part card_part-four"></div>
+                <div class="card_part card_part-five"></div>
+                <div class="card_part card_part-six"></div>
+                <div class="card_part card_part-seven"></div>
+                <div class="card_part card_part-eight"></div>
+                <div class="card_part card_part-nine"></div>
+                <div class="card_part card_part-ten"></div>
+                <div class="card_part card_part-eleven"></div>
+            </div>
         </div>
         <div id="message" style="margin-top: 15px;">🤵👰!עד החתונה</div>
         <hr>
-        <div id="songbox">
-            <div id="songTitle">:פינת החמשיר</div>
-            <iframe id="song" src="song.html" frameBorder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-            <form action="http://haitachen.com:3000" method="post">
-                <label id="newLineLabel" for="new_line" style="font-size: 30px;"></label>
-                <input dir="rtl" type="text" id="new_line" onfocus="this.value=''" name="new_line" maxlength="60"
-                    size="40" onsubmit="return validateForm()" value="אתם מוזמנים להוסיף שורה חדשה😀"></input>
-            </form>
+        <div id="extrasbox">
+            <div class="songbox">
+                <div id="songTitle">:פינת החמשיר</div>
+                <iframe id="song" src="song.html" frameBorder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+                <form action="http://haitachen.com:3000" method="post">
+                    <label id="newLineLabel" for="new_line" style="font-size: 30px;"></label>
+                    <input dir="rtl" type="text" id="new_song_line" onfocus="this.value=''" name="new_line" maxlength="60"
+                        size="40" onsubmit="return validateForm()" value="אתם מוזמנים להוסיף שורה חדשה😀"></input>
+                </form>
+            </div>
+            <div class="songbox">
+                <div id="songTitle">:פינת הברכות</div>
+                <iframe id="song" src="blessings.html" frameBorder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+                <form action="http://haitachen.com:3000/blessing" method="post">
+                    <label id="newLineLabel" for="new_line" style="font-size: 30px;"></label>
+                    <input dir="rtl" type="text" id="new_blessing_line" onfocus="this.value=''" name="new_line" maxlength="100"
+                        size="40" onsubmit="return validateForm()" value="אתם מוזמנים לכתוב ברכה😃"></input>
+                </form>
+            </div>
         </div>
-
     </div>
 </div>
 

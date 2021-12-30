@@ -87,7 +87,7 @@ function confetti(e){
   }
 }
 
-document.getElementById('card').addEventListener('click',confetti)
+document.getElementById('cards').addEventListener('click',confetti)
 
 
 // Countdown functions
