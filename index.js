@@ -97,12 +97,13 @@ function confetti(e){
 }
 
 document.getElementById('card').addEventListener('click',confetti)
-function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    myFunction(this);
+
+
+function validateForm() {
+  const regexvalid = new RegExp(/^[a-zA-Z\u0590-\u05FF \u00a9\u00ae\u2000-\u3300\ud83c\ud000-\udfff\ud83d\ud000-\udfff\ud83e\ud000-\udfff,.:!?-]+$/);
+  const isValid = regexvalid.test(req.body.newLine);
+  if (!isValid) {
+    alert("אין להשתמש בתווים מיוחדים");
+    return false;
   }
-  xhttp.open("GET", "song");
-  xhttp.send();
 }
-document.getElementById('song').innerHTML 

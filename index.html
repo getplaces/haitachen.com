@@ -21,7 +21,7 @@
         <iframe id="song" src="song.html"></iframe>
         <form action="http://haitachen.com:3000" method="post">
             <label id="newLineLabel" for="newLine" style="font-size: 30px;"></label>
-            <input dir="rtl" type="text" id="newLine" onfocus="this.value=''" name="newLine" maxlength= "60" size="40" value="אתם מוזמנים להוסיף שורה חדשה😀"></input>
+            <input dir="rtl" type="text" id="newLine" onfocus="this.value=''" name="newLine" maxlength= "60" size="40" onsubmit="return validateForm()" value="אתם מוזמנים להוסיף שורה חדשה😀"></input>
           </form>
         <hr>
         

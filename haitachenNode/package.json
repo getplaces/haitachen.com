@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "strip-js": "^1.2.0",
+    "validator": "^13.7.0"
   }
 }
