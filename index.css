@@ -93,7 +93,12 @@ body {
 #songbox {
   margin-top: 50px;
   border: solid;
-  border-color: #1483e4;
+  border-width: 10px;
+  border-color: #a4c6c8;
+  border-style: double;
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+  border-radius: 30px;
 }
 
 #songTitle {
@@ -132,13 +137,9 @@ body {
 /* Cards */
 .card {
   position: relative;
-  
   width: 700px;
   height: 400px;
   overflow: hidden;
-
-  border-radius: 5px;
-  /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);*/
 }
 
 .card::after {
