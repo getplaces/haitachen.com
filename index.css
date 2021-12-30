@@ -48,6 +48,12 @@ html{
 
 #new_line {
     font-size: 30px;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    width: 80%;
+    margin: 10%;
+    margin-top: 10px;
 }
 
 #time-running{
@@ -198,4 +204,13 @@ body {
 #song {
   direction: rtl;
   width: 80%;
+  margin: 10%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#songbox {
+  margin-top: 50px;
+  border: solid;
+  border-color: #1483e4;
 }
