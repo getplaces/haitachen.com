@@ -1,33 +1,24 @@
+
+//Validate function
+function validateForm() {
+  const regexvalid = new RegExp(/^[a-zA-Z\u0590-\u05FF \u00a9\u00ae\u2000-\u3300\ud83c\ud000-\udfff\ud83d\ud000-\udfff\ud83e\ud000-\udfff,.:!?-]+$/);
+  const isValid = regexvalid.test(req.body.newLine);
+  if (!isValid) {
+    alert("אין להשתמש בתווים מיוחדים");
+    return false;
+  }
+}
+
+
+//Make Iframe full size function
+function resizeIframe(iframe) {
+  iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+}
+
+
+//Confetti functions
 var confettiCount = 200
 var currConfettiCounter = 0
-
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 12, 2022 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  const fixeddays = ('' + days).padStart(2, '0')
-  const fixedhours = ('' + hours).padStart(2, '0')
-  const fixedminutes = ('' + minutes).padStart(2, '0')
-  const fixedseconds = ('' + seconds).padStart(2, '0')
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = fixeddays + ":" + fixedhours + ":"
-  + fixedminutes + ":" + fixedseconds;
-}, 1);
 
 function randomTiming() {
   var timing = Math.random()*3 + 2.2
@@ -99,15 +90,30 @@ function confetti(e){
 document.getElementById('card').addEventListener('click',confetti)
 
 
-function validateForm() {
-  const regexvalid = new RegExp(/^[a-zA-Z\u0590-\u05FF \u00a9\u00ae\u2000-\u3300\ud83c\ud000-\udfff\ud83d\ud000-\udfff\ud83e\ud000-\udfff,.:!?-]+$/);
-  const isValid = regexvalid.test(req.body.newLine);
-  if (!isValid) {
-    alert("אין להשתמש בתווים מיוחדים");
-    return false;
-  }
-}
+// Countdown functions
+var countDownDate = new Date("Jan 12, 2022 00:00:00").getTime();
 
-function resizeIframe(iframe) {
-  iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-}
+
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  const fixeddays = ('' + days).padStart(2, '0')
+  const fixedhours = ('' + hours).padStart(2, '0')
+  const fixedminutes = ('' + minutes).padStart(2, '0')
+  const fixedseconds = ('' + seconds).padStart(2, '0')
+
+  // Display the result in the element with id="timer"
+  document.getElementById("timer").innerHTML = fixeddays + ":" + fixedhours + ":"
+  + fixedminutes + ":" + fixedseconds;
+}, 1);
