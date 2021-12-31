@@ -1,3 +1,10 @@
+/* variables */
+/* num-of-pic = 11 */
+/* --total-time: num-of-pic*6s; */
+/* --anim-time: 100/(--total-time/anim-time:0.84)% */
+/* --stay-time: 100/num-of-pic%; */
+/* --last-stay-time: 100 - (100/most-pics) * itamar-pics */
+
 /* Entire page */
 *,
 *::before,
@@ -149,7 +156,7 @@ body {
 }
 
 
-/* Cards */
+/* Chen cards */
 
 #cards {
   display: flex;
@@ -180,7 +187,7 @@ body {
   background-color: rgba(140, 22, 114, 0);
 }
 
-.card_part {
+.chen_card_part {
   position: absolute;
   top: 0;
   left: 0;
@@ -200,69 +207,118 @@ body {
   animation: opaqTransition 66s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
-.card_part.card_part-two {
+.chen_card_part.chen_card_part-two {
   z-index: 20;
   background-image: url(./images/19.jpeg);
   animation-delay: 6s;
 }
 
-.card_part.card_part-three {
+.chen_card_part.chen_card_part-three {
   z-index: 19;
   background-image: url(./images/18.jpeg);
   animation-delay: 12s;
 }
 
-.card_part.card_part-four {
+.chen_card_part.chen_card_part-four {
   z-index: 18;
   background-image: url(./images/17.jpeg);
   animation-delay: 18s;
 }
 
-.card_part.card_part-five {
+.chen_card_part.chen_card_part-five {
   z-index: 17;
   background-image: url(./images/16.jpeg);
   animation-delay: 24s;
 }
 
-.card_part.card_part-six {
+.chen_card_part.chen_card_part-six {
   z-index: 16;
   background-image: url(./images/15.jpeg);
   animation-delay: 30s;
 }
 
-.card_part.card_part-seven {
+.chen_card_part.chen_card_part-seven {
   z-index: 4;
   background-image: url(./images/14.jpeg);
   animation-delay: 36s;
 }
 
-.card_part.card_part-eight {
+.chen_card_part.chen_card_part-eight {
   z-index: 4;
   background-image: url(./images/13.jpeg);
   animation-delay: 42s;
 }
 
-.card_part.card_part-nine {
+.chen_card_part.chen_card_part-nine {
   z-index: 4;
   background-image: url(./images/12.jpeg);
   animation-delay: 48s;
 }
 
-.card_part.card_part-ten {
+.chen_card_part.chen_card_part-ten {
   z-index: 4;
   background-image: url(./images/11.jpeg);
   animation-delay: 54s;
 }
 
-.card_part.card_part-eleven {
+.chen_card_part.chen_card_part-eleven {
   z-index: 4;
   background-image: url(./images/10.jpeg);
   animation-delay: 60s;
 }
 
 @keyframes opaqTransition {
-  1% { transform: translateY( 0px ); }
+  1.27% { transform: translateY( 0px ); }
   9.09% { transform: translateY( 0px ); }
-  10.09% { transform: translateY( -400px ); }
+  10.36% { transform: translateY( -400px ); }
+  100% { transform: translateY( -400px ); }
+}
+
+/* Itamar cards */
+
+.itamar_card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+  transform: translateY( 400px );
+  background-image: url(./images/20.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  animation: Transition 66s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+
+.itamar_card_part.itamar_card_part-two {
+  z-index: 20;
+  background-image: url(./images/19.jpeg);
+  animation-delay: 6s;
+}
+
+.itamar_card_part.itamar_card_part-three {
+  z-index: 19;
+  background-image: url(./images/18.jpeg);
+  animation: lastTransition 66s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation-delay: 12s;
+}
+
+@keyframes Transition {
+  1.27% { transform: translateY( 0px ); }
+  9.09% { transform: translateY( 0px ); }
+  10.36% { transform: translateY( -400px ); }
+  100% { transform: translateY( -400px ); }
+}
+
+@keyframes lastTransition {
+  1.27% { transform: translateY( 0px ); }
+  81.82% { transform: translateY( 0px ); }
+  83.9% { transform: translateY( -400px ); }
   100% { transform: translateY( -400px ); }
 }
