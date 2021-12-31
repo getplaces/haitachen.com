@@ -1,9 +1,8 @@
 /* variables */
 /* num-of-pic = 11 */
-/* --total-time: num-of-pic*6s; */
+/* --total-time: num-of-pic*5s; */
 /* --anim-time: 100/(--total-time/anim-time:0.84)% */
 /* --stay-time: 100/num-of-pic%; */
-/* --last-stay-time: 100 - (100/most-pics) * itamar-pics */
 
 /* Entire page */
 *,
@@ -199,78 +198,96 @@ body {
   height: 100%;
   
   transform: translateY( 400px );
-  background-image: url(./images/20.jpeg);
+  background-image: url(./images/25.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   
-  animation: opaqTransition 66s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation: chenTransition 70s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
 .chen_card_part.chen_card_part-two {
   z-index: 20;
-  background-image: url(./images/19.jpeg);
-  animation-delay: 6s;
+  background-image: url(./images/24.jpeg);
+  animation-delay: 5s;
 }
 
 .chen_card_part.chen_card_part-three {
   z-index: 19;
-  background-image: url(./images/18.jpeg);
-  animation-delay: 12s;
+  background-image: url(./images/23.jpeg);
+  animation-delay: 10s;
 }
 
 .chen_card_part.chen_card_part-four {
   z-index: 18;
-  background-image: url(./images/17.jpeg);
-  animation-delay: 18s;
+  background-image: url(./images/22.jpeg);
+  animation-delay: 15s;
 }
 
 .chen_card_part.chen_card_part-five {
   z-index: 17;
-  background-image: url(./images/16.jpeg);
-  animation-delay: 24s;
+  background-image: url(./images/21.jpeg);
+  animation-delay: 20s;
 }
 
 .chen_card_part.chen_card_part-six {
   z-index: 16;
-  background-image: url(./images/15.jpeg);
-  animation-delay: 30s;
+  background-image: url(./images/20.jpeg);
+  animation-delay: 25s;
 }
 
 .chen_card_part.chen_card_part-seven {
   z-index: 4;
-  background-image: url(./images/14.jpeg);
-  animation-delay: 36s;
+  background-image: url(./images/19.jpeg);
+  animation-delay: 30s;
 }
 
 .chen_card_part.chen_card_part-eight {
   z-index: 4;
-  background-image: url(./images/13.jpeg);
-  animation-delay: 42s;
+  background-image: url(./images/18.jpeg);
+  animation-delay: 35s;
 }
 
 .chen_card_part.chen_card_part-nine {
   z-index: 4;
-  background-image: url(./images/12.jpeg);
-  animation-delay: 48s;
+  background-image: url(./images/17.jpeg);
+  animation-delay: 40s;
 }
 
 .chen_card_part.chen_card_part-ten {
   z-index: 4;
-  background-image: url(./images/11.jpeg);
-  animation-delay: 54s;
+  background-image: url(./images/16.jpeg);
+  animation-delay: 45s;
 }
 
 .chen_card_part.chen_card_part-eleven {
   z-index: 4;
-  background-image: url(./images/10.jpeg);
+  background-image: url(./images/15.jpeg);
+  animation-delay: 50s;
+}
+
+.chen_card_part.chen_card_part-twelve {
+  z-index: 4;
+  background-image: url(./images/14.jpeg);
+  animation-delay: 55s;
+}
+
+.chen_card_part.chen_card_part-thirteen {
+  z-index: 4;
+  background-image: url(./images/13.jpeg);
   animation-delay: 60s;
 }
 
-@keyframes opaqTransition {
-  1.27% { transform: translateY( 0px ); }
-  9.09% { transform: translateY( 0px ); }
-  10.36% { transform: translateY( -400px ); }
+.chen_card_part.chen_card_part-fourteen {
+  z-index: 4;
+  background-image: url(./images/12.jpeg);
+  animation-delay: 65s;
+}
+
+@keyframes chenTransition {
+  1.2% { transform: translateY( 0px ); }
+  7.14% { transform: translateY( 0px ); }
+  8.34% { transform: translateY( -400px ); }
   100% { transform: translateY( -400px ); }
 }
 
@@ -293,32 +310,24 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   
-  animation: Transition 66s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation: itamarTransition 15s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
 .itamar_card_part.itamar_card_part-two {
   z-index: 20;
   background-image: url(./images/19.jpeg);
-  animation-delay: 6s;
+  animation-delay: 5s;
 }
 
 .itamar_card_part.itamar_card_part-three {
   z-index: 19;
   background-image: url(./images/18.jpeg);
-  animation: lastTransition 66s cubic-bezier(0, 0, 0, 0.97) infinite;
-  animation-delay: 12s;
+  animation-delay: 10s;
 }
 
-@keyframes Transition {
-  1.27% { transform: translateY( 0px ); }
-  9.09% { transform: translateY( 0px ); }
-  10.36% { transform: translateY( -400px ); }
-  100% { transform: translateY( -400px ); }
-}
-
-@keyframes lastTransition {
-  1.27% { transform: translateY( 0px ); }
-  81.82% { transform: translateY( 0px ); }
-  83.9% { transform: translateY( -400px ); }
+@keyframes itamarTransition {
+  5.6% { transform: translateY( 0px ); }
+  33.33% { transform: translateY( 0px ); }
+  38.93% { transform: translateY( -400px ); }
   100% { transform: translateY( -400px ); }
 }
