@@ -203,7 +203,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   
-  animation: chenTransition 70s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation: chenTransition 75s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
 .chen_card_part.chen_card_part-two {
@@ -284,10 +284,16 @@ body {
   animation-delay: 65s;
 }
 
+.chen_card_part.chen_card_part-fiveteen {
+  z-index: 4;
+  background-image: url(./images/11.jpeg);
+  animation-delay: 70s;
+}
+
 @keyframes chenTransition {
-  1.2% { transform: translateY( 0px ); }
-  7.14% { transform: translateY( 0px ); }
-  8.34% { transform: translateY( -400px ); }
+  1.12% { transform: translateY( 0px ); }
+  6.66% { transform: translateY( 0px ); }
+  7.78% { transform: translateY( -400px ); }
   100% { transform: translateY( -400px ); }
 }
 
@@ -304,15 +310,15 @@ body {
   width: 100%;
   height: 100%;
   
-  transform: translateY( 400px );
-  background-image: url(./images/20.jpeg);
+  /* transform: translateY( 400px ); */
+  background-image: url(./images/10Itamar.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   
-  animation: itamarTransition 15s cubic-bezier(0, 0, 0, 0.97) infinite;
+  /* animation: itamarTransition 15s cubic-bezier(0, 0, 0, 0.97) infinite; */
 }
-
+/*
 .itamar_card_part.itamar_card_part-two {
   z-index: 20;
   background-image: url(./images/19.jpeg);
@@ -331,3 +337,5 @@ body {
   38.93% { transform: translateY( -400px ); }
   100% { transform: translateY( -400px ); }
 }
+
+*/
