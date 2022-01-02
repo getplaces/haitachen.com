@@ -203,7 +203,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   
-  animation: chenTransition 75s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation: chenTransition 80s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
 .chen_card_part.chen_card_part-two {
@@ -290,10 +290,15 @@ body {
   animation-delay: 70s;
 }
 
+.chen_card_part.chen_card_part-sixteen {
+  z-index: 4;
+  background-image: url(./images/10.jpeg);
+  animation-delay: 75s;
+}
 @keyframes chenTransition {
-  1.12% { transform: translateY( 0px ); }
-  6.66% { transform: translateY( 0px ); }
-  7.78% { transform: translateY( -400px ); }
+  1.05% { transform: translateY( 0px ); }
+  6.25% { transform: translateY( 0px ); }
+  7.3% { transform: translateY( -400px ); }
   100% { transform: translateY( -400px ); }
 }
 
