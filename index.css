@@ -202,128 +202,134 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  animation: chenTransition 100s cubic-bezier(0, 0, 0, 0.97) infinite;
-  animation-delay: 95s;
+  animation: chenTransition 105s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation-delay: 100s;
 }
 
 .chen_card_part.chen_card_part-two {
   z-index: 20;
   background-image: url(./images/24.jpeg);
-  animation-delay: 90s;
+  animation-delay: 95s;
 }
 
 .chen_card_part.chen_card_part-three {
   z-index: 19;
   background-image: url(./images/23.jpeg);
-  animation-delay: 85s;
+  animation-delay: 90s;
 }
 
 .chen_card_part.chen_card_part-four {
   z-index: 18;
   background-image: url(./images/22.jpeg);
-  animation-delay: 80s;
+  animation-delay: 85s;
 }
 
 .chen_card_part.chen_card_part-five {
   z-index: 17;
   background-image: url(./images/21.jpeg);
-  animation-delay: 75s;
+  animation-delay: 80s;
 }
 
 .chen_card_part.chen_card_part-six {
   z-index: 16;
   background-image: url(./images/20.jpeg);
-  animation-delay: 70s;
+  animation-delay: 75s;
 }
 
 .chen_card_part.chen_card_part-seven {
   z-index: 4;
   background-image: url(./images/19.jpeg);
-  animation-delay: 65s;
+  animation-delay: 70s;
 }
 
 .chen_card_part.chen_card_part-eight {
   z-index: 4;
   background-image: url(./images/18.jpeg);
-  animation-delay: 60s;
+  animation-delay: 65s;
 }
 
 .chen_card_part.chen_card_part-nine {
   z-index: 4;
   background-image: url(./images/17.jpeg);
-  animation-delay: 55s;
+  animation-delay: 60s;
 }
 
 .chen_card_part.chen_card_part-ten {
   z-index: 4;
   background-image: url(./images/16.jpeg);
-  animation-delay: 50s;
+  animation-delay: 55s;
 }
 
 .chen_card_part.chen_card_part-eleven {
   z-index: 4;
   background-image: url(./images/15.jpeg);
-  animation-delay: 45s;
+  animation-delay: 50s;
 }
 
 .chen_card_part.chen_card_part-twelve {
   z-index: 4;
   background-image: url(./images/14.jpeg);
-  animation-delay: 40s;
+  animation-delay: 45s;
 }
 
 .chen_card_part.chen_card_part-thirteen {
   z-index: 4;
   background-image: url(./images/13.jpeg);
-  animation-delay: 35s;
+  animation-delay: 40s;
 }
 
 .chen_card_part.chen_card_part-fourteen {
   z-index: 4;
   background-image: url(./images/12.jpeg);
-  animation-delay: 30s;
+  animation-delay: 35s;
 }
 
 .chen_card_part.chen_card_part-fiveteen {
   z-index: 4;
   background-image: url(./images/11.jpeg);
-  animation-delay: 25s;
+  animation-delay: 30s;
 }
 
 .chen_card_part.chen_card_part-sixteen {
   z-index: 4;
   background-image: url(./images/10.jpeg);
-  animation-delay: 20s;
+  animation-delay: 25s;
 }
 
 .chen_card_part.chen_card_part-seventeen {
   z-index: 4;
   background-image: url(./images/9.jpeg);
-  animation-delay: 15s;
+  animation-delay: 20s;
 }
 
 .chen_card_part.chen_card_part-eighteen {
   z-index: 4;
   background-image: url(./images/8.jpeg);
-  animation-delay: 10s;
+  animation-delay: 15s;
 }
 
 .chen_card_part.chen_card_part-nineteen {
   z-index: 4;
   background-image: url(./images/7.jpeg);
-  animation-delay: 5s;
+  animation-delay: 10s;
 }
 
 .chen_card_part.chen_card_part-twenty {
   z-index: 4;
   background-image: url(./images/6.jpeg);
+  animation-delay: 5s;
+}
+
+.chen_card_part.chen_card_part-twentyone {
+  z-index: 4;
+  background-image: url(./images/5.jpeg);
   animation-delay: 0s;
 }
 
 @keyframes chenTransition {
-  0.84% { transform: translateY( 0px ); }
-  5% { transform: translateY( 0px ); }
-  5.84% { transform: translateY( -400px ); }
+  0.8% { transform: translateY( 0px ); }
+  4.76% { transform: translateY( 0px ); }
+  5.56% { transform: translateY( -400px ); }
   100% { transform: translateY( -400px ); }
 }
 
@@ -345,38 +351,44 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  animation: itamarTransition 25s cubic-bezier(0, 0, 0, 0.97) infinite; 
-  animation-delay: 20s;
+  animation: itamarTransition 30s cubic-bezier(0, 0, 0, 0.97) infinite; 
+  animation-delay: 25s;
 }
 
 .itamar_card_part.itamar_card_part-two {
   z-index: 20;
   background-image: url(./images/9Itamar.jpeg);
-  animation-delay: 15s;
+  animation-delay: 20s;
 }
 
 .itamar_card_part.itamar_card_part-three {
   z-index: 19;
   background-image: url(./images/8Itamar.jpeg);
-  animation-delay: 10s;
+  animation-delay: 15s;
 }
 
 .itamar_card_part.itamar_card_part-four {
   z-index: 19;
   background-image: url(./images/7Itamar.jpeg);
-  animation-delay: 5s;
+  animation-delay: 10s;
 }
 
 .itamar_card_part.itamar_card_part-five {
   z-index: 19;
   background-image: url(./images/6Itamar.jpeg);
+  animation-delay: 5s;
+}
+
+.itamar_card_part.itamar_card_part-six {
+  z-index: 19;
+  background-image: url(./images/5Itamar.jpeg);
   animation-delay: 0s;
 }
 
 @keyframes itamarTransition {
-  3.36% { transform: translateY( 0px ); }
-  20% { transform: translateY( 0px ); }
-  23.36% { transform: translateY( -400px ); }
+  2.8% { transform: translateY( 0px ); }
+  16.66% { transform: translateY( 0px ); }
+  19.46% { transform: translateY( -400px ); }
   100% { transform: translateY( -400px ); }
 }
 
